@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <main>
+        <h2>Войти в аккаунт</h2>
+        <form role="form" onsubmit="signIn(event);" autocomplete="off">
+            <div class="form-group">
+                <input type="text" name="fname" id="fname" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]+$" title="Имя должен содержать только буквы">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Почта" required >
+            </div>
+            <div class="form-group">
+                <input type="password" name="pwd" id="pwd" placeholder="Пароль" required pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$" minlength="8" title="Пароль должен содержать только буквы,цифры">
+            </div>
+            <div class="form-group">
+                <button type="submit">Войти</button>
+            </div>
+        </form>
+        <p>Нет аккаунта? <a href="signup.html">Зарегистрироваться</a> </p>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

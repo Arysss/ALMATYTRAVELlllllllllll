@@ -1,0 +1,40 @@
+.form-group{ 
+    margin: 40px 40px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+ }
+input{ height: 30px; width: 40%; padding: 5px;
+border: solid 2px #C1D9FD;}
+
+button{ 
+    background: dodgerblue; 
+    color: #fff; 
+    padding: 10px; 
+    border: solid 1px dodgerblue;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+}
+p{
+    text-align: center;
+}
+input:focus{
+    outline: none;
+    border: solid 2px #C1D9FD;}
+
+input:invalid{
+    
+    border-color: red;
+}
+input:not(:focus):invalid {
+    border-color: #C1D9FD;
+}
+input:valid{
+    border-color: rgb(21, 163, 21);
+}
